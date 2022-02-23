@@ -1,0 +1,14 @@
+config:
+  target: https://15o3fm16g9.execute-api.ap-southeast-2.amazonaws.com/demo/SecureResource
+  phases:
+    - duration: 5
+      arrivalRate: 100
+
+scenarios:
+  - name: "Get test"
+    weight: 2
+    flow:
+      - get:
+          url: "/"
+          headers:
+            Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6InRlc3QtcnNhIn0.eyJvcmlnaW5fanRpIjoiYjA2NjFkZjItMjZmMS00NzFkLTkwODAtODQxMDc0M2M5MGRhIiwiY3VzdG9tOnRlbmFudElkIjoiMTIzNDU2N3h5eiIsInN1YiI6ImQxZmRmMDA2LTNlOTktNDE1ZS05ODRlLWI2NDliZWIyMjEyZiIsImF1ZCI6IjI4aXFyZ2lybW5oM3ZjMmRwbGRnNGgxOW4iLCJldmVudF9pZCI6ImYwYmJkZGZkLTU2NGYtNDI2OC05NGI3LTJiMGU2NGY1N2Q1MSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjQ0ODIzODk0LCJpc3MiOiJodHRwczovL3J1c3QuYmx1ZXByaW50LmF1dGguY29tIiwiY29nbml0bzp1c2VybmFtZSI6Im5pcm8uYW0iLCJleHAiOjE2NDk1NjgyMzUsImlhdCI6MTY0NTU2NDYzNSwianRpIjoiNjNiY2U2NmItMTUwYi00ZmFjLWJhNjctZmZiZmM1N2Q4MzUwIn0.2SN5dHuHjOGCOY6h_HKlKcEtfrczSeXGTirN4XwiSpZCIww_9OWAryrgAG3QzIbZiKl6I72ORb8iypyQSfVJcX9dASZMTmV5lFNsPw7v3YAKvrcCdrKkU62l1P90tD_qYIIyzXUriOjPJ3KwmeWXTShh1UsFQopoKAY113p2smflNaV326Ss3lvn9k_eNxuCHD3vyfAEMYDBdSmMtupfm7jl59_2r_9dhPe5VhUhec1yG5vMgBe-OgFc_OrcvmS1ujSQ8vZHhoXJ75I2EinYvl4ghr7r0Ms-kwZOb6yZXxVQjXiHpc-622wHYRiVWDTrjtA19KmZbo1HxnQOwD2J5w'
