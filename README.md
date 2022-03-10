@@ -1,4 +1,4 @@
-# Lambda Authorizure using Rust
+# Lambda Authorizer using Rust
 AWS Lambda Multi Tenant Authorizer with Tenant Session Generation
 
 ![authorizer drawio](https://user-images.githubusercontent.com/7487453/156469571-4549b5ea-0d57-4c68-b1dd-5ac6780f84a3.png)
